@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <!--FIN DEL JUEGO-->
+    <div id="winBackground" hidden>
+        <div id="winMessage" hidden></div>
+        <div class="buttonContainer" hidden>
+            <button id="winButton" hidden>Accept</button>
+        </div>
+    </div>
+        <nav class="nav-bar">
+            <button class="buttonToggleSound"><i class="fas fa-volume-up toggleSound"></i></button>
+            <div class="turn">Player <span id="numberTurn" class="turnBlue">1</span></div>
+            <div id="reset-content"><button id="reset">Reset</button></div>
+        </nav>
+        <div id="score">
+            <p class="scorePlayers"><span class="turnBlue">Player 1</span> wins: <span id="player1Wins">0</span></p>
+            <p class="scorePlayers"><span class="turnRed">Player 2</span> wins: <span id="player2Wins">0</span></p>
+        </div>
+
+    <!--CUADRICULA-->
+
+    <div class="container">
+        <div class="casillero">
+            <button class="casilla" id="a3">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="b3">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="c3">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="a2">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="b2">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="c2">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla" id="a1">
+                <div class="piece" id="p1a"></div>
+            </button>
+            <button class="casilla" id="b1">
+                <div class="piece"></div>
+            </button>
+            <button class="casilla 1c" id="c1">
+                <div class="piece"></div>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://codepen.io/bauti-saire" target="_blank" id="credits">Misáianes</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="tateti.js"></script>
+    <audio id="pieceSound">
+        <source src="piece.mp3" type="audio/ogg">
+    </audio>
+    <audio id="winSound" src="Win.wav" type="audio/ogg"></audio>
+</body>
+
+</html>
